@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 ruby "3.2.2"
 
+gem "devise", "~> 4.9"
 gem "importmap-rails"
 gem "jbuilder"
 gem "pg", "~> 1.1"
@@ -47,3 +48,6 @@ group :development do
   # gem "spring"
 end
 
+group :test do
+  gem "shoulda-matchers", "~> 6.0"
+end
